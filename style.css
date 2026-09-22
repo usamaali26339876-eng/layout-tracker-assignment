@@ -1,0 +1,178 @@
+/* ==========================================================================
+   1. Base Reset & Typography (Requirement #2)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Color Palette: Light gray/blue background (Requirement #1) */
+    background-color: #f0f4f8;
+    color: #334e68;
+    /* Typography: Using Inter for body copy (Requirement #2) */
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Typography Hierarchy (Requirement #2) */
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #102a43; /* Deep navy headings */
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ecc94b; /* Gold accent line border */
+    padding-bottom: 8px;
+}
+
+/* ==========================================================================
+   2. The CSS Box Model & Card Layouts (Requirement #4)
+   ========================================================================== */
+.card {
+    background-color: #ffffff;
+    /* Box Model spacing properties */
+    padding: 30px;
+    margin-bottom: 24px;
+    /* Soft modern appearance borders */
+    border: 1px solid #d9e2ec;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Unique card stylings */
+.header-card {
+    text-align: center;
+    background: linear-gradient(135deg, #102a43 0%, #243e56 100%);
+    color: #ffffff;
+    border: none;
+}
+
+.header-card h1 {
+    color: #ffffff;
+}
+
+.header-card p {
+    color: #bcccdc;
+    font-size: 1rem;
+}
+
+/* ==========================================================================
+   3. Form Styling (Requirement #3)
+   ========================================================================== */
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #486581;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    /* Padding and spacing */
+    padding: 12px 14px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    /* Input border styles */
+    border: 1px solid #bcccdc;
+    border-radius: 6px;
+    background-color: #fafbfe;
+    color: #102a43;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #627d98;
+}
+
+/* Button layout styling */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    /* Cohesive Button Theme */
+    background-color: #102a43;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #243e56;
+}
+
+/* ==========================================================================
+   4. Expense Table Styling (Requirement #3)
+   ========================================================================== */
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+/* Table Header Styles */
+th {
+    background-color: #f0f4f8;
+    color: #486581;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    padding: 12px 16px;
+    border-bottom: 2px solid #d9e2ec;
+}
+
+/* Table Row Padding & Border Styles */
+td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334e68;
+}
+
+/* Alternating Row Colors */
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Hover highlights for row readability */
+tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+.amount-cell {
+    font-weight: 600;
+    color: #102a43;
+}
